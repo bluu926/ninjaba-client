@@ -14,6 +14,9 @@ const config = {
       exclude: /node_modules/,
       test: /\.(js|jsx)$/,
       loader: 'babel',
+	  query: {
+        presets: ['es2015', 'react']
+      }	  
     },
       {
         test: /\.scss$/,
